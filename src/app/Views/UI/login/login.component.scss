@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
+  background-image: linear-gradient(to top, rgb(168, 237, 234) 0%, #fed6e3 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  opacity: 0.95;
+}
+
+table{
+  width: 98vw;
+  height: 97.5vh;
+}
+
+tr{
+  width: auto;
+}
+
+td.registrar{
+  width: 60%;
+}
+
+img{
+  display: block;
+  float: right;
+  width: 150px;
+  height: 150px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+div{
+  position: relative;
+}
+
+form {
+  position: relative;
+  top: -2%;
+  left: 4%;
+  float: right;
+  background-color: white;
+  width: 450px;
+  height: 100%;
+  box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+  padding: 7%;
+  padding-top: 0;
+}
+
+div.con {
+  width: 100%;
+  height: 100%;
+  padding: 0%;
+  position: relative;
+
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  margin: 0px;
+}
+
+header {
+  margin: 2% auto 3% auto;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header p {
+  letter-spacing: 0.05em;
+}
+
+header h2 {
+  margin: 2% auto 0% auto;
+  text-align: center;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header.head-button h2{
+  margin: 2% auto 0% auto;
+  color: #ffffff;
+  float: left;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  text-align: left;
+}
+
+.input-item {
+
+  background: #fff;
+  color: #333;
+  padding: 14.5px 0px 15px 9px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+i{
+  margin-left: 3%;
+}
+
+#eye {
+  background: #fff;
+  color: #333;
+
+  margin: 2% 5% 0 0;
+  margin-left: -20px;
+  padding: 15px 9px 19px 0px;
+  border-radius: 0px 5px 5px 0px;
+
+  float: right;
+  position: relative;
+  right: 1%;
+  top: -0.2%;
+  z-index: 5;
+
+  cursor: pointer;
+}
+
+input[class="form-input"] {
+  display:inline-block;
+
+  width: 250px;
+  height: 50px;
+  margin-left: 5%;
+  margin-right: auto;
+  margin-top: 3%;
+  padding: 15px;
+
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  color: #5e6472;
+
+  background-color: rgb(236, 236, 236);
+
+  outline: none;
+  border: none;
+
+  border-radius: 50px;
+  transition: 0.2s linear;
+}
+
+/* focus  */
+input:focus {
+  transform: translateX(-2px);
+  border-radius: 5px;
+}
+
+button {
+  display: inline-block;
+
+  width: 280px;
+  height: 50px;
+
+  padding: 0 20px;
+  background: #fff;
+  border-radius: 50px;
+
+  outline: none;
+  border: none;
+
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s linear;
+
+  margin: 7% auto;
+  letter-spacing: 0.05em;
+
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+}
+
+.submits {
+  width: 48%;
+  display: block;
+  float: left;
+  margin-left: 2%;
+}
+
+.frgt-pass {
+  background: transparent;
+}
+
+.sign-up {
+  background: #b8f2e6;
+}
+
+button:hover {
+  transform: translatey(3px);
+  box-shadow: none;
+  animation: ani9 0.4s ease-in-out infinite alternate;
+}
+
+
+@keyframes ani9 {
+  0% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+.btn_submits_sign-up{
+  background-color: #1977f1;
+  width: auto;
+  box-shadow: 30px, 30px, 5px, black;
+  z-index: 10;
+}
+
+.MensajeMandar {
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff3300;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.overlay {
+  padding-top: 1rem;
+}
+
+.form-group {
+  position: relative;
+}
+
+.img-preview {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  margin-top: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.log-in{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(10, 192, 10);
+  width: auto;
+}
+
+.other{
+  margin-left: 20%;
+}
+
+div.field-set{
+  width: 100%;
+}
+

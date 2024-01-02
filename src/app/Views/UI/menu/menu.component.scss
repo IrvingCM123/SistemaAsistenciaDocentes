@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap");
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background:fixed;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+}
+
+.Navegador {
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 30px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  background: linear-gradient(to bottom, #011970, #44a0fe);
+  margin: 0;
+  padding: 0;
+
+}
+
+.Logo_Pagina {
+  grid-column-start: 1;
+  grid-column-end: 1;
+
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.Nombre_Pagina {
+  grid-column-start: 2;
+  grid-column-end: 4;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.Opciones_Rutas {
+  grid-column-start: 4;
+  grid-column-end: 6;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.Cuenta {
+  grid-column-start: 6;
+  grid-column-end: 7;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0;
+}
+
+.Logo_Pagina_img img {
+  width: 70%;
+  height: 70%;
+  padding: 10px 40px;
+  margin-left: 15%;
+}
+
+.Nombre_Pagina_Text_Defualt {
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.Rutas_Navegacion_Listado {
+  display: flex;
+  flex-direction: row;
+
+  align-content: center;
+  justify-content: space-around;
+  margin: 7%;
+}
+
+.Rutas_Navegacion_Listado a {
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 130%;
+
+  text-decoration: none;
+  text-align: center;
+}
+
+.Cerrar_Sesion {
+  padding: 0;
+  margin-right: 5%;
+}
+
+.Cerrar_Sesion button {
+  border-color: inherit;
+  background-color: inherit;
+  border: none;
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.Cerrar_Sesion_img {
+  width: 20%;
+  height: 25%;
+}

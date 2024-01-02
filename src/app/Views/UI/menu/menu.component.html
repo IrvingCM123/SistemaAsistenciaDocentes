@@ -1,0 +1,30 @@
+<main class="Navegador">
+  <section class="Logo_Pagina">
+    <div class="Logo_Pagina_img">
+      <img src="./assets/menu/UVLOGO.png" alt="logo"  />
+    </div>
+  </section>
+
+  <section class="Nombre_Pagina">
+    <div class="Nombre_Pagina_Text_Defualt">
+       Universidad Veracruzana
+    </div>
+  </section>
+
+  <section class="Opciones_Rutas">
+    <div class="Rutas_Navegacion_Contenedor">
+      <nav class="Rutas_Navegacion_Listado">
+        <a [routerLink]="'/Sistema/Inicio'">Inicio</a>
+        <a [routerLink]="'/Sistema/Inicio/Listado'">Listado</a>
+        <a [routerLink]="'/Sistema/Inicio/Alta_Materia'">Alta Materia</a>
+        <a [routerLink]="'/Sistema/Inicio/Baja_Materia'">Baja Materia</a>
+      </nav>
+    </div>
+  </section>
+
+  <section class="Cuenta">
+    <div class="Cerrar_Sesion">
+      <button type="submit" (click)="CerrarSesion()">Cerrar Sesion</button>
+    </div>
+  </section>
+</main>

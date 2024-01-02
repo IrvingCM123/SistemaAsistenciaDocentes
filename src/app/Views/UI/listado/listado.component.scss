@@ -1,0 +1,47 @@
+.Datos td{
+  color: black;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.Datos:hover {
+  background-color: rgb(195, 195, 195);
+
+  cursor: pointer;
+}
+
+.titulo{
+  margin: 20px;
+}
+
+.table {
+  height: fit-content; /* Establece una altura máxima para la tabla */
+  width: 95%; /* Establece una altura fija para el contenedor */
+  position: absolute;
+}
+
+.excel-table th, .excel-table td {
+  text-align: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.excel-table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+
+.Contenedor {
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+  border-radius: 2rem;
+  background-color: rgb(255, 255, 255);
+  margin: 30px 0px 0px 20px;
+  display: flex;
+  flex-direction: row;
+  height: 80.5%;
+  position: relative; 
+  overflow-y: scroll;
+  width: 95%;
+}

@@ -1,0 +1,30 @@
+<body>
+
+  <!--Contenedor de los componentes que se mostrarán en el sistema. **Este se mostrará hasta q loggeIn sea true -->
+  <!-- La variable loggeIn marcará o definirá cuando un usuario haya iniciado sesión permitiendo la visualización de sus componentes -->
+  <Main id="Contenedor" *ngIf="loggedIn">
+    <Article id="Navegacion">
+      <app-menu></app-menu>
+    </Article>
+    <article id="Informacion_Docente">
+      <app-docente></app-docente>
+    </article>
+    <article id="Pantalla_Informacion">
+      <router-outlet></router-outlet>
+    </article>
+  </Main>
+
+  <!-- Si la variable loggeIn es false solo podrán mostrarse los formularios pertenecientes a login -->
+  <div *ngIf="!loggedIn" id="ContenedorLogin">
+    
+    <!-- Mostrar formulario de registro -->
+    <section id="Registro" *ngIf="formulario === 'registro' || formulario == '' ">
+      <app-registro (iniciarSesion)="mostrarIniciarSesion()"></app-registro>
+    </section>
+
+    <!-- Mostrar formulario de login -->
+    <section id="Login" *ngIf="formulario === 'login'">
+      <app-login (registrarse)="mostrarRegistro()"></app-login>
+    </section>
+  </div>
+</body>

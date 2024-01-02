@@ -1,0 +1,127 @@
+<div class="overlay" style="padding-top: 1rem;">
+  <table>
+    <tr>
+      <td class="registro">
+        <div class="other">
+          <header class="head-button">
+            <h2>¿Ya estás registrado?</h2>
+          </header>
+
+          <button class="btn_submits_sign-up" (click)="IniciarSesion()">
+            Iniciar Sesión
+          </button>
+        </div>
+      </td>
+      <td>
+        <form style="padding-top: 0; ">
+          <div class="con">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Logo_de_la_Universidad_Veracruzana.svg"
+              alt="uvlogo"
+            />
+            <header class="head-form">
+              <h2>Registrar docente</h2>
+            </header>
+            <div class="field-set">
+              <span class="input-item">
+                <i class="fa fa-user-circle"></i>
+              </span>
+              <!--Input para ingresar el correo del formulario de registro-->
+              <input
+                class="form-input"
+                id="correo"
+                type="email"
+                placeholder="@Correo"
+                [value]="correo_usuario"
+                (input)="actualizarCorreo($event)"
+                required
+              />
+              <br />
+
+              <span class="input-item">
+                <i class="fa fa-key"></i>
+              </span>
+              <!--pInput para ingresar la contraseña del formulario de registro-->
+              <input
+                class="form-input"
+                type="password"
+                id="contraseña"
+                name="password"
+                placeholder="Contraseña"
+                [value]="contrasena_usuario"
+                (input)="actualizarContrasena($event)"
+                required
+              />
+              <br />
+
+              <span class="input-item">
+                <i class="fa fa-key"></i>
+              </span>
+              <!--pInput para ingresar la confirmación de contraseña del formulario de registro-->
+              <input
+                class="form-input"
+                type="password"
+                id="confirmarContraseña"
+                name="contraseña"
+                placeholder="Confirmar Contraseña"
+                [value]="confirmar_contrasena"
+                (input)="actualizarconfirmarContrasena($event)"
+                required
+              />
+              <br />
+
+              <span class="input-item">
+                <i class="fa fa-user-circle"></i>
+              </span>
+              <!--Input para ingresar el numero de personal del formulario de registro-->
+              <input
+                class="form-input"
+                id="numeroPersonal"
+                type="text"
+                placeholder="NumeroPersonal"
+                [value]="NPersonal_usuario"
+                (input)="actualizarNumeroPersonal($event)"
+                required
+              />
+
+              <!--Input de tipo file para almacernar la imagen del usuario-->
+              <input
+                style="margin-top: 1rem"
+                type="file"
+                (change)="GuardarImagen($event)"
+                class="img-preview"
+              />
+              <!--Previsualización de la imagen del usuario-->
+              <img
+                class="img-preview"
+                *ngIf="imageURL"
+                [src]="imageURL"
+                alt="Imagen Subida"
+              />
+              <!--Botón de crear cuenta-->
+              <button class="log-in" (click)="CrearCuenta()">
+                Crear Cuenta
+              </button>
+            </div>
+          </div>
+        </form>
+      </td>
+    </tr>
+  </table>
+
+  <!--Mensajes de error "Lac contraseñas no coinciden"-->
+  <div *ngIf="Mensaje_Contrasena" class="MensajeMostrar">
+    Las contraseñas no coinciden!!
+  </div>
+  <!--Mensajes de error al crear la cuenta"-->
+  <div *ngIf="Mostrar_Mensaje" class="MensajeMostrar">
+    {{ Mensaje_Cuenta }}
+  </div>
+  <!--Mensajes de confirmación al crear correctamente la cuenta"-->
+  <div *ngIf="Mostrar_Mensaje_Cuenta" class="MensajeMandar">
+    <p>{{ Mensaje_Cuenta }}</p>
+    <button *ngIf="mostrarBotonAceptar" (click)="ocultarMensajeCuenta()">
+      Aceptar
+    </button>
+  </div>
+</div>
